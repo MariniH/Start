@@ -34,6 +34,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/public/password-reset/password-reset.module').then( m => m.PasswordResetPageModule),
     // canActivate: [PublicGuard] // Prevent for signed in users
   },
+  {
+    path: 'submission-page',
+    loadChildren: () => import('./pages/secure/submission-page/submission-page.module').then( m => m.SubmissionPagePageModule)
+  },
  
 ];
 @NgModule({

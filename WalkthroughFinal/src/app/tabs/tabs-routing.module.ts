@@ -21,14 +21,12 @@ const routes: Routes = [
         path: 'camera',
         loadChildren: () => import('../pages/secure/camera/charts.module').then(m => m.ChartsPageModule)
       },
+      
       {
-        path: 'payments',
-        loadChildren: () => import('../pages/secure/payments/payments.module').then(m => m.PaymentsPageModule)
-      },
-      {
-        path: 'styleguide',
+        path: 'reports',
         loadChildren: () => import('../pages/secure/styleguide/styleguide.module').then(m => m.StyleguidePageModule)
       },
+      
     ]
   }
 ];

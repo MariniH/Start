@@ -18,9 +18,18 @@ const routes: Routes = [
     path: 'settings/profile/edit',
     loadChildren: () => import('./profile/edit/edit.module').then(m => m.EditPageModule)
   },
+  
   {
-    path: 'payments/detail',
-    loadChildren: () => import('./payments/payments/payment-detail.module').then( m => m.PaymentDetailPageModule)
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
+    path: 'zippie',
+    loadChildren: () => import('./zippie/zippie.module').then( m => m.ZippiePageModule)
   }
 ];
 

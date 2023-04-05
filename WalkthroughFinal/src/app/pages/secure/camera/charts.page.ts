@@ -247,4 +247,7 @@ export class ChartsPage implements OnInit {
       }
     ];
   }
+  addPhotoToGallery(){
+   // this.photoservice.addNewToGallery();
+  }
 }
